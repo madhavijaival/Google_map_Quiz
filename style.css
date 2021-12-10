@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+}
+
+ h2, h3 {
+  margin-left: 40%;
+ color: white;
+}
+/******For right answer*****/ 
+p.Right
+{
+  text-align: center;
+color: green;
+font-size: 18px;
+}
+
+/*****For wrong answer*****/ 
+p.Wrong
+{
+  text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+
+h4{
+  color: white;
+  font-family: 'Kiwi Maru', serif;
+font-weight: 300px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 0px;
+   
+}
+/*******Campus places*********/
+p.place 
+ {
+  color: white;
+  background-color: orange;
+  text-align: center;
+  padding: 5px;
+  margin-bottom:10px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  margin-left: 40%;
+  margin-top: 50px;
+  height: 580px;
+  /* The height is 580 pixels */
+  width: 60%;
+  border: solid white 3px;
+}
+
+.inner {
+  margin: 15px;
+  margin-top: 0;
+}
+
+/* To set content on left side*/
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 40px;
+}
+
+h1
+{
+  color: white;
+  text-align: center;
+  margin-top:30%;
+  animation: 2s anim-popoutin ease infinite;  
+}
+/********Animation to result *********/
+@keyframes anim-popoutin {
+  0% {
+    color: white;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  20% {
+    color: yellow;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: white;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
